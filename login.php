@@ -44,8 +44,6 @@
 	//is the username & password in our username table?
 	$found_user = false;
 	$found_user_id = 0;
-	$found_user_name = "";
-	$found_user_email = "";
 	
 	foreach ($users_database as &$single_user_in_database)
 	{
@@ -53,23 +51,11 @@
 		{
 			$found_user = true;
 			$found_user_id = $single_user_in_database['id'];
-			$found_user_name = $single_user_in_database['name'];
-			$found_user_email = $single_user_in_database['email'];
 		}
 	
 	}
 	
-	if ($found_user == false)
-	{
-		echo "User not found, login unsuccessful";
-	}
-	else
-	{
-		echo "Youv'e succesfully logged in using the direct login!<br><br>";	
-		echo "User id ".$found_user_id." is logged in<br>";
-		echo "User name is ".$found_user_name."<br>";
-		echo "User email is ".$found_user_email."<br>";
-	}
+	echo 'Found user id is '.$found_user_id;
 
 ?>	
 </body>

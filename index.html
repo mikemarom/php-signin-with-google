@@ -1,0 +1,49 @@
+<!DOCTYPE html><html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-language" content="en-Us">
+	<link rel="stylesheet" type="text/css" href="layout.css" /> 
+	<title>Signin to Webapp</title>
+		
+</head>
+<body>
+	Sign in to webapp:
+	<p>
+		Direct login:
+	<form action="login.php" method="POST">
+			<input type="text" name="username" placeholder="User Name"><br>
+			<input type="password" name="password" placeholder="Password"><br> 
+	        <button type="submit">Login</button>
+	</form>
+	
+	<p>
+	
+	Alternatively, login via Google Sign-In:
+	<script src="https://accounts.google.com/gsi/client" async></script> <!-- Google Sign In library -->
+	<div id="g_id_onload"
+	     data-client_id="929704032553-00u0ts295fqhjre2ld2ccqhf7h0ekct8.apps.googleusercontent.com"
+	     data-context="signin"
+	     data-ux_mode="popup"
+	     data-login_uri="http://marom.dev/php-signin-with-google"
+	     data-auto_prompt="false">
+	</div>
+
+	<div class="g_id_signin"
+	     data-type="standard"
+	     data-shape="rectangular"
+	     data-theme="outline"
+	     data-text="signin_with"
+	     data-size="large"
+	     data-logo_alignment="left">
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
