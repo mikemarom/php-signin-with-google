@@ -2,7 +2,6 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="content-language" content="en-Us">
-		<link rel="stylesheet" type="text/css" href="layout.css" /> 
 	<title>Signin to Webapp</title>
 </head>
 <body>

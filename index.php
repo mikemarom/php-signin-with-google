@@ -21,15 +21,15 @@
 	require_once 'google-api-php-client--PHP7.4/vendor/autoload.php';
 	
 	// Google Client configuration
-	$googClientID = '929704032553-00u0ts295fqhjre2ld2ccqhf7h0ekct8.apps.googleusercontent.com';
-	$googClientSecret = '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';
+	$googClientID = '*************************';
+	$googClientSecret = '*************************';
 
 	// Initialize the Google API Client
 	$gClient = new Google_Client();
 	$gClient->setApplicationName('Login to marom.dev');
 	$gClient->setClientId($googClientID);
 	$gClient->setClientSecret($googClientSecret);
-	$gClient->setRedirectUri('https://marom.dev/php-signin-with-google/google_login.php');
+	$gClient->setRedirectUri('/google_login.php');
 	
 	// What are the data fields we'd like to get from the user once they've logged in
 	$gClient->setScopes(array('profile','email'));
