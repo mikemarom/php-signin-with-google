@@ -19,7 +19,7 @@
 	$gClient->setApplicationName('Login to marom.dev');
 	$gClient->setClientId($googClientID);
 	$gClient->setClientSecret($googClientSecret);
-	$gClient->setRedirectUri('google_login.php');
+	$gClient->setRedirectUri('/google_login.php');
 	
 	// What are the data fields we'd like to get from the user once they've logged in
 	$gClient->setScopes('email');
